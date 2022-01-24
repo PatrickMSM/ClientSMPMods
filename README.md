@@ -4,3 +4,4 @@ This is a collection of (mostly) optimization mods made for PatSMP. This modpack
 robotkoer for [Fabulously Optimized](https://www.curseforge.com/minecraft/modpacks/fabulously-optimized/)
 
 henkelmax, Strideyyy and BreadLoaf___ for [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat/)
+
