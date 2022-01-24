@@ -44,9 +44,12 @@ rd /S /Q %appdata%\.minecraft\mods\ 2>nul
 rd /S /Q %appdata%\.minecraft\config\ 2>nul
 echo Deleted all old mods and old mod settings!
 echo Copying over new mods and mod settings..
-xcopy %tempLoc%\clientmods\mods %appdata%\.minecraft\ /s/e/y/k/c
-xcopy %tempLoc%\clientmods\config %appdata%\.minecraft\ /s/e/y/k/c
+xcopy %tempLoc%\clientmods\mods %appdata%\.minecraft\ /s/e/y/k/c/q
+xcopy %tempLoc%\clientmods\config %appdata%\.minecraft\ /s/e/y/k/c/q
 echo Copied over new mods and mod settings!
+echo Cleaning up..
+rd /S /Q %tempLoc% 2>nul
+echo Cleaned up!
 echo Done! PRESS ANY KEY TO EXIT
 echo Kesz! NYOMD MEG BARMILYEN GOMBOT HOGY LEPJ KI
 echo Gata! APASA ORICE TASTA PENTRU A IESI
