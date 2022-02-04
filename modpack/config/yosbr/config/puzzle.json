@@ -14,7 +14,7 @@
   "showPuzzleInfo": false,
   "resourcepackSplashScreen": true,
   "disableSplashScreenBlend": false,
-  "emissiveTextures": true,
+  "emissiveTextures": false,
   "unlimitedRotations": true,
   "biggerModels": true,
   "backgroundColor": 15675965,
