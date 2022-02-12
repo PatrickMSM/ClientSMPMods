@@ -7,9 +7,7 @@ rd /S /Q %tempLoc% 2>nul
 mkdir %tempLoc%
 
 title AutoInstaller
-echo WARNING! THIS APP IS ONLY IN ENGLISH EXCEPT SOME IMPORTANT OPTIONS!
-echo FIGYELEM! EZ AZ ALKALMAZAS CSAK ANGOLBAN VAN MEG A FONTOS VALASZTASOKON KIVUL!
-echo AVERTIZMENT! ACEASTA APLICATIE ESTE NUMAI IN ENGLEZA IN AFARA DE OPTIUNILE IMPORTANTE!
+echo WARNING! THIS APP IS ONLY IN ENGLISH!
 echo.
 echo.
 echo Welcome to AutoInstaller!
@@ -24,8 +22,6 @@ if exist %appdata%\.minecraft\ (
   echo Found Minecraft!
 ) else (
   echo MINECRAFT NOT FOUND! PRESS ANY KEY TO EXIT
-  echo MINECRAFT NEM TALALHATO! NYOMD MEG BARMILYEN GOMBOT HOGY LEPJ KI
-  echo MINECRAFT NU POATE FI GASIT! APASA ORICE TASTA PENTRU A IESI
   pause >nul
   exit
 )
@@ -34,10 +30,6 @@ set tmp=^"Expand-Archive ^'%tempLoc%\clientmods.zip^' ^'%tempLoc%\clientmods\^'^
 powershell -c %tmp%
 echo Expanded archive!
 echo WARNING! ALL OTHER MODS AND MOD SETTINGS WILL BE DELETED! PRESS ANY KEY TO CONTINUE!
-echo FIGYELEM! MINDEN MAS MOD ES MOD BEALLITAS LE LESSZ TOROLVE! NYOMD MEG BARMILYEN GOMBOT A FOLYTATASHOZ!
-echo AVERTIZARE! TOATE CELALALTE MODURI SI SETARI DE MODURI VOR FI STERSE! APASA ORICE TASTA PENTRU A CONTINUA!
-pause >nul
-echo ARE YOU SURE? BIZTOS VAGY? ESTI SIGUR?
 pause >nul
 echo Deleting all old mods and old mod settings..
 rd /S /Q %appdata%\.minecraft\mods\ 2>nul
@@ -50,7 +42,5 @@ echo Cleaning up..
 rd /S /Q %tempLoc% 2>nul
 echo Cleaned up!
 echo Done! PRESS ANY KEY TO EXIT
-echo Kesz! NYOMD MEG BARMILYEN GOMBOT HOGY LEPJ KI
-echo Gata! APASA ORICE TASTA PENTRU A IESI
 pause >nul
 exit
