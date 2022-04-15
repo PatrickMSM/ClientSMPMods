@@ -11,10 +11,10 @@ echo WARNING! THIS APP IS ONLY IN ENGLISH!
 echo.
 echo.
 echo Welcome to AutoInstaller!
-echo This app will install PatSMP's modpack AUTOMATICALLY for you!
+echo This app will install ClientSMPMods AUTOMATICALLY for you!
 echo WARNING! THIS ONLY WORKS ON WINDOWS 7 AND ABOVE!
 echo Downloading modpack..
-set tmp=^"Invoke-WebRequest -Uri ^'https://github.com/PatrickMSM/patsmp-clientmods/raw/master/clientmods.zip^' -OutFile ^'%tempLoc%\clientmods.zip^'^"
+set tmp=^"Invoke-WebRequest -Uri ^'https://github.com/PatrickMSM/ClientSMPMods/raw/master/clientmods.zip^' -OutFile ^'%tempLoc%\clientmods.zip^'^"
 powershell -c %tmp%
 echo Downloaded modpack!
 echo Searching for minecraft..
