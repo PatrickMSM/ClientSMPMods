@@ -3,7 +3,7 @@
   "overrides": {
     "fabric": {
       "+depends": {
-        "fabricloader": ">=0.12.12"
+        "fabricloader": ">=0.13.3"
       }
     },
     "advancementinfo": {
@@ -19,11 +19,6 @@
     "colormatic": {
       "-recommends": {
         "quilt-loader": ""
-      }
-    },
-    "dcch": {
-      "-depends": {
-        "minecraft": ""
       }
     }
   }
