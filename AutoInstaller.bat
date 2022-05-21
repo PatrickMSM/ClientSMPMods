@@ -14,9 +14,7 @@ echo Welcome to ClientSMPMods AutoInstaller!
 echo This will install ClientSMPMods AUTOMATICALLY for you!
 echo WARNING! THIS ONLY WORKS ON WINDOWS 7 AND ABOVE!
 echo Downloading modpack..
-set tmp=^"Invoke-WebRequest -Uri ^'https://github.com/PatrickMSM/ClientSMPMods/raw/master/clientmods.zip^' -OutFile ^'%tempLoc%\clientmods.zip^'^"
-powershell -c %tmp%
-echo Downloaded modpack!
+powershell -c (New-Object Net.WebClient).DownloadFile('https://github.com/PatrickMSM/ClientSMPMods/raw/master/clientmods.zip', '%tempLoc%\clientmods.zip')
 echo Searching for minecraft..
 if exist %appdata%\.minecraft\ (
   echo Found Minecraft!
@@ -26,8 +24,7 @@ if exist %appdata%\.minecraft\ (
   exit
 )
 echo Expanding archive..
-set tmp=^"Expand-Archive ^'%tempLoc%\clientmods.zip^' ^'%tempLoc%\clientmods\^'^"
-powershell -c %tmp%
+powershell -c Expand-Archive '%tempLoc%\clientmods.zip' '%tempLoc%\clientmods\'
 echo WARNING! ALL OTHER MODS AND MOD SETTINGS WILL BE DELETED! PRESS ANY KEY TO CONTINUE!
 pause >nul
 echo Deleting all old mods and old mod settings..
