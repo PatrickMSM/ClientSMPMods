@@ -22,7 +22,7 @@ if exist %appdata%\.minecraft\ (
   exit
 )
 echo Expanding archive..
-powershell -c Expand-Archive '%TEMP%\ClientSMPMods\clientmods.zip' '%TEMP%\ClientSMPMods\clientmods.zip'
+powershell -c Expand-Archive '%TEMP%\ClientSMPMods\clientmods.zip' '%TEMP%\ClientSMPMods\clientmods\'
 echo WARNING! ALL OTHER MODS AND MOD SETTINGS WILL BE DELETED! PRESS ANY KEY TO CONTINUE!
 pause >nul
 echo Deleting all old mods and old mod settings..
