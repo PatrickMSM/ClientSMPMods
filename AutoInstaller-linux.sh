@@ -8,7 +8,6 @@ echo ""
 echo ""
 echo "Welcome to ClientSMPMods AutoInstaller!"
 echo "This will install ClientSMPMods AUTOMATICALLY for you!"
-echo "WARNING! THIS ONLY WORKS ON WINDOWS 7 AND ABOVE!"
 echo "Downloading modpack.."
 
 wget -q --show-progress -O "/tmp/ClientSMPMods/clientmods.zip" "github.com/PatrickMSM/ClientSMPMods/raw/master/clientmods.zip"
